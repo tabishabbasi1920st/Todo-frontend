@@ -140,7 +140,7 @@ export class LoginPage extends Component {
     if (formValidationResult) {
       this.setState({ apiStatus: apiStatusConstants.inProgress });
       const { username, password } = this.state;
-      const apiUrl = "http://localhost:8081/login";
+      const apiUrl = "http://localhost:7508/login";
       const data = { username: username, password: password };
       const options = {
         method: "POST",

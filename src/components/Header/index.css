@@ -1,0 +1,243 @@
+.header{
+    width:100%;
+    height:12vh;
+    /* border:2px solid red; */
+    padding:10px;
+    background-color:  #f5f5f5;
+    /* border-bottom:1px solid #f3aa4e; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.sm-nav-bar{
+    height:46.67px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border:2px solid green; */
+}
+
+@media screen and (min-width:576px){
+    .sm-nav-bar{
+        display: none;
+    }
+}
+
+.sm-nav-second-container{
+    display: flex;
+    align-items: center;
+}
+
+.search-icon-button{
+    margin-right:20px;
+    color:#f3aa4e;
+    border:none;
+    background-color: transparent;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width:576px){
+    .search-icon-button{
+        display: none;
+    }
+}
+
+.three-dots-icon-button{
+    border:none;
+    background-color: transparent;
+    font-size: 30px;
+    color:#f3aa4e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.light-theme-icon-button{
+    color:#f3aa4e;
+    margin-right:10px;
+    font-size: 30px;
+    border:none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dark-theme-icon-button{
+    color:#f3aa4e;
+    font-size: 30px;
+    border:none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:10px;
+    cursor: pointer;
+}
+
+.sm-searchbar-container{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top:0px;
+    animation: top-to-initial 0.2s ease-in-out;
+}
+
+@media screen and (min-width:576px){
+    .sm-searchbar-container{
+        display: none;
+    }
+}
+
+@keyframes top-to-initial {
+    0%{
+        top:-50vh;
+    }
+    100%{
+        top:0px;
+    }
+}
+
+.lg-nav-bar{
+    height:46.67px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border:2px solid green; */
+}
+
+@media screen and (max-width:576px){
+    .lg-nav-bar{
+        display: none;
+    }
+}
+
+.left-arrow-icon-button{
+    color:#f3aa4e;
+    font-size: 30px;
+    border:none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left:0px;
+    
+    animation:arrow-left-to-initial 0.4s ease-in-out;
+}
+
+.header-profile-username{
+    color:#f3aa4e;
+    margin-left:10px;
+    display: none;
+}
+
+@keyframes arrow-left-to-initial {
+    0%{
+        left:-10vw;
+    }
+    100%{
+        transform: rotate(360deg);
+        left:0px;
+    }
+}
+
+.search-bar-container{
+    flex-grow: 1;
+    border-radius: 5px;
+    /* border:2px solid #f3aa4e; */
+    margin-left:10px;
+    margin-right:10px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.search-input{
+    height:100%;
+    width:100%;
+    border:none;
+    outline:none;
+    padding:10px;
+    font-size: 20px;
+    color: #3F2305;
+    position: relative;
+    right:0px;
+    animation:right-to-initial 0.4s ease-in-out;
+}
+
+@keyframes right-to-initial {
+    0%{
+        right:-50vw;
+    }
+    100%{
+        right:0px;
+    }
+}
+
+.nav-logout-btn{
+    height:50px;
+    width:100px;
+    border:none;
+    background-color: #f3aa4e;
+    color:#fff;
+    font-weight: bold;
+    border-radius: 5px;
+    outline:none;
+    cursor: pointer;
+}
+
+.nav-profile-icon-button{
+    font-size: 40px;
+    border:none;
+    color:#f3aa4e;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-logo-heading {
+    color: #fff;
+    font-size: 47px;
+}
+
+.nav-img{
+    height:100px;
+    width:100px;
+    mix-blend-mode: darken;
+}
+
+.logout-btn{
+    height:40px;
+    width:100px;
+    margin-left:10px;
+    font-size: 16px;
+    color:#fff;
+    border-radius: 5px;;
+    border:none;
+    background-color: #b84444;
+}
+
+.logout-btn-sm{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#b84444;
+    border:none;
+    background-color: transparent;
+    margin-left:10px;
+}
